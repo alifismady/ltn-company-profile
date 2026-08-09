@@ -7,7 +7,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Bagaimana cara melacak kiriman saya?",
     answer:
-      "Anda dapat melacak kiriman menggunakan nomor resi yang kami berikan melalui fitur Cek Resi di halaman utama.",
+      "Hubungi tim kami melalui WhatsApp atau halaman kontak untuk mendapatkan informasi terbaru mengenai status kiriman Anda.",
   },
   {
     question: "Jenis layanan apa saja yang tersedia?",

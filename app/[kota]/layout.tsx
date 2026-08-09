@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cities, getCity } from "@/lib/cities";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, features } from "@/lib/site";
 
 export function generateStaticParams() {
+  /* Ketika sub-tree kota nonaktif, tidak ada halaman per kota yang dibuat. */
+  if (!features.kotaSubtree) {
+    return [];
+  }
   return cities.map((city) => ({ kota: city.slug }));
 }
 
@@ -11,6 +15,12 @@ export default async function CityLayout({
   children,
   params,
 }: LayoutProps<"/[kota]">) {
+  /* Sub-tree kota nonaktif mode company profile (lihat lib/site.ts).
+   * Saat diaktifkan kembali, halaman-halaman per kota akan tersedia lagi. */
+  if (!features.kotaSubtree) {
+    notFound();
+  }
+
   const { kota } = await params;
   const city = getCity(kota);
 

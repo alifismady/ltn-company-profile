@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Hero from "@/components/hero";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cek Harga",
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
 };
 
 export default function CekHargaPage() {
+  if (!features.cekHarga) {
+    notFound();
+  }
   return (
     <>
       <Hero

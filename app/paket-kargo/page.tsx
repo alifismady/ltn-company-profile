@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Hero from "@/components/hero";
 import CtaCard from "@/components/cta-card";
+import { features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Paket & Kargo",
@@ -8,7 +10,9 @@ export const metadata: Metadata = {
     "Pengiriman paket dan kargo ke seluruh Indonesia dengan pelacakan real-time dan tarif kompetitif.",
 };
 
-const features = [
+/* Fitur layanan nonaktif dalam mode company profile (lihat lib/site.ts).
+   Guard `notFound()` dijalankan di dalam komponen di bawah. */
+const featuresData = [
   {
     title: "Pelacakan Real-time",
     description:
@@ -32,6 +36,9 @@ const features = [
 ];
 
 export default function PaketKargoPage() {
+  if (!features.services) {
+    notFound();
+  }
   return (
     <>
       <Hero
@@ -44,7 +51,7 @@ export default function PaketKargoPage() {
           Kenapa Memilih Layanan Kargo Kami?
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature) => (
+          {featuresData.map((feature) => (
             <div
               key={feature.title}
               className="rounded-2xl border border-border bg-surface p-6"

@@ -5,8 +5,8 @@ export default function SiteFooter() {
   return (
     <footer className="border-t border-border bg-surface">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-1.5 lg:pr-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="lg:pr-4">
             <p className="mb-3 text-lg font-bold tracking-tight">
               {siteConfig.name}
             </p>
@@ -15,6 +15,7 @@ export default function SiteFooter() {
             </p>
           </div>
 
+          {/* Layanan — nonaktif dalam mode company profile, aktifkan kembali bila fitur layanan dihidupkan.
           <div>
             <p className="mb-3 font-semibold">Layanan</p>
             <ul className="space-y-2 text-sm text-muted">
@@ -35,6 +36,7 @@ export default function SiteFooter() {
               </li>
             </ul>
           </div>
+          */}
 
           <div>
             <p className="mb-3 font-semibold">Perusahaan</p>
@@ -45,6 +47,12 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/kontak" className="hover:text-primary">
+                  Kontak
+                </Link>
+              </li>
+              {/* Blog & FAQ — aktifkan kembali bila fitur hidup
+              <li>
                 <Link href="/blog" className="hover:text-primary">
                   Blog
                 </Link>
@@ -54,11 +62,7 @@ export default function SiteFooter() {
                   FAQ
                 </Link>
               </li>
-              <li>
-                <Link href="/kontak" className="hover:text-primary">
-                  Kontak
-                </Link>
-              </li>
+              */}
             </ul>
           </div>
 
@@ -72,6 +76,7 @@ export default function SiteFooter() {
           </div>
 
           <div className="sm:col-span-2 lg:col-span-1">
+            {/* Berlangganan Berita — nonaktif dalam mode company profile.
             <p className="mb-3 font-semibold">Berlangganan Berita</p>
             <p className="mb-3 text-sm text-muted">
               Dapatkan wawasan dan penawaran terbaru dari kami.
@@ -90,6 +95,11 @@ export default function SiteFooter() {
                 Kirim
               </button>
             </form>
+            */}
+            <p className="mb-3 font-semibold">Jam Operasional</p>
+            <p className="mb-3 text-sm text-muted">
+              Informasi jam operasional dapat dikonfirmasi melalui kontak kami.
+            </p>
           </div>
         </div>
 

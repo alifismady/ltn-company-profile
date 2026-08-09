@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import SectionTitle from "@/components/section-title";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { posts } from "@/lib/posts";
+import { features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -11,6 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  if (!features.blog) {
+    notFound();
+  }
   return (
     <>
       <Hero

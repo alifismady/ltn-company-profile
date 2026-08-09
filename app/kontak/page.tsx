@@ -12,7 +12,7 @@ export default function KontakPage() {
     <>
       <Hero
         title="Hubungi Kami"
-        subtitle="Tim kami siap membantu Anda 24/7. Konsultasikan kebutuhan logistik Anda secara gratis."
+        subtitle="Tim kami siap membantu Anda. Konsultasikan kebutuhan logistik Anda secara gratis."
         ctaLabel=""
       />
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">

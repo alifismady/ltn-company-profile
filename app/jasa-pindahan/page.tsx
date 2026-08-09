@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { features } from "@/lib/site";
 import Hero from "@/components/hero";
 import CtaCard from "@/components/cta-card";
 
@@ -8,6 +10,8 @@ export const metadata: Metadata = {
     "Jasa pindahan rumah, kantor, dan apartemen dengan penanganan profesional mulai dari pengepakan hingga penataan.",
 };
 
+/* Fitur layanan nonaktif dalam mode company profile (lihat lib/site.ts).
+   Guard `notFound()` dijalankan di dalam komponen di bawah. */
 const steps = [
   {
     title: "Konsultasi & Survey",
@@ -32,6 +36,9 @@ const steps = [
 ];
 
 export default function JasaPindahanPage() {
+  if (!features.services) {
+    notFound();
+  }
   return (
     <>
       <Hero

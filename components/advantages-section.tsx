@@ -1,8 +1,8 @@
 const advantages = [
   {
-    title: "Layanan Pelanggan 24/7",
+    title: "Integritas & Profesionalisme",
     description:
-      "Tim kami siap membantu Anda kapan saja, memastikan semua pertanyaan Anda terjawab.",
+      "Kami bersikap independen, objektif, dan terbuka dengan menjunjung tinggi standar etika profesional.",
     icon: (
       <path
         strokeLinecap="round"
@@ -12,9 +12,9 @@ const advantages = [
     ),
   },
   {
-    title: "Harga Transparan",
+    title: "Harga Kompetitif",
     description:
-      "Tidak ada biaya tersembunyi. Dapatkan penawaran harga yang jelas sejak awal.",
+      "Kami memberikan pelayanan terbaik dengan harga yang kompetitif untuk memenuhi kebutuhan klien.",
     icon: (
       <path
         strokeLinecap="round"
@@ -24,9 +24,9 @@ const advantages = [
     ),
   },
   {
-    title: "Jangkauan Luas",
+    title: "Kontribusi Positif",
     description:
-      "Kami siap mengirimkan barang Anda ke seluruh pelosok Indonesia dengan jaringan yang andal.",
+      "Setiap penugasan kami memberikan hasil bisnis yang signifikan dan bernilai jangka panjang bagi klien.",
     icon: (
       <path
         strokeLinecap="round"
@@ -36,9 +36,9 @@ const advantages = [
     ),
   },
   {
-    title: "Armada Terawat",
+    title: "Kemauan Kuat",
     description:
-      "Semua armada kami melalui perawatan rutin untuk menjamin keamanan dan ketepatan waktu.",
+      "Kami tidak pernah mudah menyerah dan selalu berusaha mencapai aspirasi dengan segenap kemampuan.",
     icon: (
       <path
         strokeLinecap="round"

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Hero from "@/components/hero";
 import FleetSection from "@/components/fleet-section";
 import CtaCard from "@/components/cta-card";
+import { features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Sewa Truk",
@@ -9,7 +11,11 @@ export const metadata: Metadata = {
     "Sewa truk dari berbagai jenis armada mulai dari pickup, engkel, cdd, fuso, hingga tronton dan wingbox.",
 };
 
+/* Fitur layanan nonaktif dalam mode company profile (lihat lib/site.ts). */
 export default function SewaTrukPage() {
+  if (!features.services) {
+    notFound();
+  }
   return (
     <>
       <Hero

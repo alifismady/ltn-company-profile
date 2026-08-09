@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import CtaCard from "@/components/cta-card";
 import { posts, getPost } from "@/lib/posts";
+import { features } from "@/lib/site";
 
 export function generateStaticParams() {
+  /* Ketika blog nonaktif, tidak ada halaman artikel yang dibuat. */
+  if (!features.blog) {
+    return [];
+  }
   return posts.map((post) => ({ slug: post.slug }));
 }
 
@@ -25,6 +31,9 @@ export default async function BlogPostPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  if (!features.blog) {
+    notFound();
+  }
   const { slug } = await params;
   const post = getPost(slug);
 
