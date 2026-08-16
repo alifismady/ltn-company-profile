@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { siteConfig } from "@/lib/site";
 
@@ -34,11 +35,18 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <div className="flex items-center gap-6">
-          <Link
-            href="/"
-            className="text-lg font-bold tracking-tight text-foreground"
-          >
-            {siteConfig.name}
+          <Link href="/" className="flex items-center gap-2">
+            {/* Logo berisi latar putih — cocok dengan header yang terang. */}
+            <Image
+              src="/images/company-logo.jpeg"
+              alt={`Logo ${siteConfig.name}`}
+              width={40}
+              height={40}
+              className="h-10 w-auto rounded object-contain"
+            />
+            <span className="text-lg font-bold tracking-tight text-foreground">
+              {siteConfig.name}
+            </span>
           </Link>
           <nav className="hidden items-center gap-5 lg:flex">
             {/* Layanan dropdown — nonaktif, aktifkan kembali jika fitur layanan dihidupkan */}

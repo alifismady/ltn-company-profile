@@ -18,6 +18,23 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  icons: {
+    icon: "/images/company-logo.jpeg",
+  },
+  /* Gambar untuk preview di tab browser, search engine, dan berbagi di
+   * media sosial. Bila domain sudah tersedia, setel `metadataBase` agar
+   * URL gambar menjadi absolut. */
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ["/images/company-logo.jpeg"],
+  },
+  twitter: {
+    card: "summary",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ["/images/company-logo.jpeg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

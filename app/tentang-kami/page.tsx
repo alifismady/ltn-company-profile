@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import SectionTitle from "@/components/section-title";
 import CtaCard from "@/components/cta-card";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site";
 import { companyServices } from "@/lib/services";
 import {
@@ -29,6 +30,15 @@ export default function TentangKamiPage() {
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="mb-8 flex justify-center">
+          <Image
+            src="/images/company-logo.jpeg"
+            alt={`Logo ${siteConfig.name}`}
+            width={120}
+            height={120}
+            className="h-28 w-auto rounded-xl border border-border bg-white object-contain"
+          />
+        </div>
         <SectionTitle
           eyebrow="Profil Perusahaan"
           title="PT Lestari Trans Nusantara"

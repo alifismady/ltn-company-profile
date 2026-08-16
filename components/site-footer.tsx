@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
@@ -7,7 +8,14 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:pr-4">
-            <p className="mb-3 text-lg font-bold tracking-tight">
+            <p className="mb-3 flex items-center gap-2 text-lg font-bold tracking-tight">
+              <Image
+                src="/images/company-logo.jpeg"
+                alt={`Logo ${siteConfig.name}`}
+                width={36}
+                height={36}
+                className="h-9 w-auto rounded object-contain"
+              />
               {siteConfig.name}
             </p>
             <p className="text-sm leading-relaxed text-muted">

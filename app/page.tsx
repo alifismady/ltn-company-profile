@@ -4,6 +4,7 @@ import AdvantagesSection from "@/components/advantages-section";
 import ServicesSection from "@/components/services-section";
 import GallerySection from "@/components/gallery-section";
 import CtaCard from "@/components/cta-card";
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 import { philosophyValues, vision, missions } from "@/lib/company";
@@ -41,6 +42,13 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
+            <Image
+              src="/images/company-logo.jpeg"
+              alt={`Logo ${siteConfig.name}`}
+              width={120}
+              height={120}
+              className="mb-6 h-24 w-auto rounded-xl border border-border bg-white object-contain"
+            />
             <SectionTitle
               align="left"
               eyebrow="Profil Perusahaan"
