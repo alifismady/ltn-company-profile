@@ -1,3 +1,12 @@
+/**
+ * NONAKTIF — CityServicePage & helper per kota.
+ *
+ * Hanya dipakai oleh sub-tree halaman `/[kota]` yang dinonaktifkan
+ * (`features.kotaSubtree = false`). Seluruh isi dikomentari; aktifkan
+ * kembali dengan menghapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 import Link from "next/link";
 import CtaCard from "@/components/cta-card";
 import SectionTitle from "@/components/section-title";
@@ -188,3 +197,4 @@ export function TruckTypeLinks({ kota }: { kota: string }) {
     </section>
   );
 }
+--------------------------------------------------------------------- */

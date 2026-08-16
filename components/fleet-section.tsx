@@ -1,3 +1,11 @@
+/**
+ * NONAKTIF — FleetSection (daftar armada truk).
+ *
+ * Hanya dipakai bila fitur `features.services` dihidupkan. Seluruh isi
+ * dikomentari; aktifkan kembali dengan menghapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 import SectionTitle from "@/components/section-title";
 import { fleet } from "@/lib/fleet";
 
@@ -59,3 +67,4 @@ function FleetCard({ item }: { item: (typeof fleet)[number] }) {
     </div>
   );
 }
+--------------------------------------------------------------------- */

@@ -1,13 +1,18 @@
-import Link from "next/link";
+/**
+ * NONAKTIF — layout sub-tree /[kota] (`features.kotaSubtree = false`).
+ *
+ * Seluruh isi layout dikomentari. Aktifkan kembali dengan mengubah
+ * `features.kotaSubtree` menjadi `true` di lib/site.ts lalu hapus
+ * komentar di bawah.
+ */
 import { notFound } from "next/navigation";
+
+/* ---------------------------------------------------------------------
+import Link from "next/link";
 import { cities, getCity } from "@/lib/cities";
-import { siteConfig, features } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
-  /* Ketika sub-tree kota nonaktif, tidak ada halaman per kota yang dibuat. */
-  if (!features.kotaSubtree) {
-    return [];
-  }
   return cities.map((city) => ({ kota: city.slug }));
 }
 
@@ -15,12 +20,6 @@ export default async function CityLayout({
   children,
   params,
 }: LayoutProps<"/[kota]">) {
-  /* Sub-tree kota nonaktif mode company profile (lihat lib/site.ts).
-   * Saat diaktifkan kembali, halaman-halaman per kota akan tersedia lagi. */
-  if (!features.kotaSubtree) {
-    notFound();
-  }
-
   const { kota } = await params;
   const city = getCity(kota);
 
@@ -65,4 +64,9 @@ export default async function CityLayout({
       {children}
     </div>
   );
+}
+--------------------------------------------------------------------- */
+
+export default async function CityLayout() {
+  notFound();
 }

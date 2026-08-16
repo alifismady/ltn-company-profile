@@ -1,7 +1,16 @@
-import type { Metadata } from "next";
+/**
+ * NONAKTIF — halaman /cek-harga (`features.cekHarga = false`).
+ *
+ * Seluruh isi halaman dikomentari. Aktifkan kembali dengan mengubah
+ * `features.cekHarga` menjadi `true` di lib/site.ts lalu hapus komentar
+ * di bawah.
+ */
 import { notFound } from "next/navigation";
+
+/* ---------------------------------------------------------------------
+import type { Metadata } from "next";
 import Hero from "@/components/hero";
-import { siteConfig, features } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Cek Harga",
@@ -9,9 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function CekHargaPage() {
-  if (!features.cekHarga) {
-    notFound();
-  }
   return (
     <>
       <Hero
@@ -78,4 +84,9 @@ export default function CekHargaPage() {
       </section>
     </>
   );
+}
+--------------------------------------------------------------------- */
+
+export default function CekHargaPage() {
+  notFound();
 }

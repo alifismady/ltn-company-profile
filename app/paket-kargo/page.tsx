@@ -1,8 +1,16 @@
-import type { Metadata } from "next";
+/**
+ * NONAKTIF — halaman /paket-kargo (`features.services = false`).
+ *
+ * Seluruh isi halaman dikomentari. Aktifkan kembali dengan mengubah
+ * `features.services` menjadi `true` di lib/site.ts lalu hapus komentar
+ * di bawah.
+ */
 import { notFound } from "next/navigation";
+
+/* ---------------------------------------------------------------------
+import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import CtaCard from "@/components/cta-card";
-import { features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Paket & Kargo",
@@ -10,8 +18,6 @@ export const metadata: Metadata = {
     "Pengiriman paket dan kargo ke seluruh Indonesia dengan pelacakan real-time dan tarif kompetitif.",
 };
 
-/* Fitur layanan nonaktif dalam mode company profile (lihat lib/site.ts).
-   Guard `notFound()` dijalankan di dalam komponen di bawah. */
 const featuresData = [
   {
     title: "Pelacakan Real-time",
@@ -36,9 +42,6 @@ const featuresData = [
 ];
 
 export default function PaketKargoPage() {
-  if (!features.services) {
-    notFound();
-  }
   return (
     <>
       <Hero
@@ -83,4 +86,9 @@ export default function PaketKargoPage() {
       />
     </>
   );
+}
+--------------------------------------------------------------------- */
+
+export default function PaketKargoPage() {
+  notFound();
 }

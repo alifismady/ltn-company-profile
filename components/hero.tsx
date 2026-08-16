@@ -10,8 +10,8 @@ type Props = {
 export default function Hero({
   title,
   subtitle,
-  ctaLabel = "Cek Harga",
-  ctaHref = "/cek-harga",
+  ctaLabel = "",
+  ctaHref = "/kontak",
 }: Props) {
   return (
     <section className="relative flex min-h-[70vh] items-center justify-center bg-slate-900 bg-cover bg-center">

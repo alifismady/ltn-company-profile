@@ -1,8 +1,17 @@
+/**
+ * NONAKTIF — halaman /[kota]/sewa-truk-wingbox (`features.kotaSubtree = false`).
+ *
+ * Seluruh isi halaman dikomentari. Aktifkan kembali dengan mengubah
+ * `features.kotaSubtree` menjadi `true` di lib/site.ts lalu hapus
+ * komentar di bawah.
+ */
+import { notFound } from "next/navigation";
+
+/* ---------------------------------------------------------------------
 import type { Metadata } from "next";
 import CityServicePage, { CityLinks } from "@/components/city-service-page";
 import CtaCard from "@/components/cta-card";
 import { getCity } from "@/lib/cities";
-import { notFound } from "next/navigation";
 
 export async function generateMetadata({
   params,
@@ -50,4 +59,9 @@ export default async function WingboxCityPage({
       />
     </>
   );
+}
+--------------------------------------------------------------------- */
+
+export default async function WingboxCityPage() {
+  notFound();
 }

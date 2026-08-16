@@ -1,13 +1,22 @@
+/**
+ * NONAKTIF — data sub-tree kota (`features.kotaSubtree = false`).
+ *
+ * Seluruh isi file dikomentari karena saat ini tidak dipakai oleh situs
+ * company profile. Aktifkan kembali dengan mengubah `kotaSubtree` menjadi
+ * `true` di lib/site.ts lalu hapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 export type City = {
   slug: string;
   name: string;
   region?: string;
 };
 
-/**
+ *
  * Daftar kota yang dilayani. Tambahkan/kurangi sesuai kebutuhan bisnis.
  * `slug` dipakai di URL (misal: /serang/sewa-truk-wingbox).
- */
+ *
 export const cities: City[] = [
   { slug: "jakarta", name: "Jakarta", region: "Banten & Jabodetabek" },
   { slug: "bandung", name: "Bandung", region: "Jawa Barat" },
@@ -39,3 +48,4 @@ export const truckTypes = [
 export function getCity(slug: string): City | undefined {
   return cities.find((c) => c.slug === slug);
 }
+--------------------------------------------------------------------- */

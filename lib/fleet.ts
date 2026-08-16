@@ -1,3 +1,12 @@
+/**
+ * NONAKTIF — data armada (`features.services = false`).
+ *
+ * File ini hanya dipakai oleh FleetSection (dinonaktifkan) sehingga seluruh
+ * isinya dikomentari. Aktifkan kembali bila fitur layanan dihidupkan di
+ * lib/site.ts lalu hapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 export type FleetItem = {
   name: string;
   images: string[];
@@ -6,10 +15,10 @@ export type FleetItem = {
   suitableFor: string;
 };
 
-/**
+ *
  * Data armada. Sesuaikan nama, dimensi, kapasitas, dan kegunaan dengan bisnis Anda.
  * `images` bersifat opsional; jika kosong, menampilkan placeholder berbasis nama armada.
- */
+ *
 export const fleet: FleetItem[] = [
   {
     name: "Pickup",
@@ -68,3 +77,4 @@ export const fleet: FleetItem[] = [
     suitableFor: "Mengangkut barang dengan dimensi tidak standar seperti alat berat atau material panjang.",
   },
 ];
+--------------------------------------------------------------------- */

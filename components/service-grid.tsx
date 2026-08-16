@@ -1,3 +1,13 @@
+/**
+ * NONAKTIF — ServiceGrid (grid layanan sewa truk / pindahan / kargo).
+ *
+ * Hanya dipakai bila fitur `features.services` dihidupkan. Seluruh isi
+ * dikomentari; aktifkan kembali dengan menghapus komentar di bawah.
+ * (Konten layanan perusahaan yang aktif kini tampil di homepage melalui
+ * komponen `ServicesSection`.)
+ */
+
+/* ---------------------------------------------------------------------
 import Link from "next/link";
 import SectionTitle from "@/components/section-title";
 
@@ -67,3 +77,4 @@ export default function ServiceGrid() {
     </section>
   );
 }
+--------------------------------------------------------------------- */

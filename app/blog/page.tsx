@@ -1,10 +1,18 @@
+/**
+ * NONAKTIF — halaman /blog (`features.blog = false`).
+ *
+ * Seluruh isi halaman dikomentari. Aktifkan kembali dengan mengubah
+ * `features.blog` menjadi `true` di lib/site.ts lalu hapus komentar
+ * di bawah.
+ */
+import { notFound } from "next/navigation";
+
+/* ---------------------------------------------------------------------
 import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import SectionTitle from "@/components/section-title";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { posts } from "@/lib/posts";
-import { features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -13,9 +21,6 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  if (!features.blog) {
-    notFound();
-  }
   return (
     <>
       <Hero
@@ -52,4 +57,9 @@ export default function BlogPage() {
       </section>
     </>
   );
+}
+--------------------------------------------------------------------- */
+
+export default function BlogPage() {
+  notFound();
 }

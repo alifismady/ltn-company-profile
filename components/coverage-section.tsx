@@ -1,3 +1,11 @@
+/**
+ * NONAKTIF — CoverageSection (jangkauan layanan per kota).
+ *
+ * Hanya dipakai bila fitur `features.kotaSubtree` dihidupkan. Seluruh isi
+ * dikomentari; aktifkan kembali dengan menghapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 import Link from "next/link";
 import SectionTitle from "@/components/section-title";
 import { cities, serviceTypes } from "@/lib/cities";
@@ -33,3 +41,4 @@ export default function CoverageSection() {
     </section>
   );
 }
+--------------------------------------------------------------------- */

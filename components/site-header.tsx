@@ -10,6 +10,7 @@ import { siteConfig } from "@/lib/site";
    lib/site.ts menjadi `true` dan hapus nilai `false &&` di bawah.
    ===================================================================*/
 const navLinks = [
+  { label: "Layanan", href: "/#layanan" },
   { label: "Tentang Kami", href: "/tentang-kami" },
   { label: "Kontak", href: "/kontak" },
 ];

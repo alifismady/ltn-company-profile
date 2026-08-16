@@ -1,6 +1,14 @@
-import type { Metadata } from "next";
+/**
+ * NONAKTIF — halaman /jasa-pindahan (`features.services = false`).
+ *
+ * Seluruh isi halaman dikomentari. Aktifkan kembali dengan mengubah
+ * `features.services` menjadi `true` di lib/site.ts lalu hapus komentar
+ * di bawah.
+ */
 import { notFound } from "next/navigation";
-import { features } from "@/lib/site";
+
+/* ---------------------------------------------------------------------
+import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import CtaCard from "@/components/cta-card";
 
@@ -10,8 +18,6 @@ export const metadata: Metadata = {
     "Jasa pindahan rumah, kantor, dan apartemen dengan penanganan profesional mulai dari pengepakan hingga penataan.",
 };
 
-/* Fitur layanan nonaktif dalam mode company profile (lihat lib/site.ts).
-   Guard `notFound()` dijalankan di dalam komponen di bawah. */
 const steps = [
   {
     title: "Konsultasi & Survey",
@@ -36,9 +42,6 @@ const steps = [
 ];
 
 export default function JasaPindahanPage() {
-  if (!features.services) {
-    notFound();
-  }
   return (
     <>
       <Hero
@@ -73,4 +76,9 @@ export default function JasaPindahanPage() {
       />
     </>
   );
+}
+--------------------------------------------------------------------- */
+
+export default function JasaPindahanPage() {
+  notFound();
 }

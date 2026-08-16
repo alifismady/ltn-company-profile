@@ -1,3 +1,11 @@
+/**
+ * NONAKTIF — FaqAccordion (akordeon pertanyaan yang sering diajukan).
+ *
+ * Hanya dipakai bila fitur `features.faq` dihidupkan. Seluruh isi
+ * dikomentari; aktifkan kembali dengan menghapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 "use client";
 
 import { useState } from "react";
@@ -63,3 +71,4 @@ export default function FaqAccordion() {
     </section>
   );
 }
+--------------------------------------------------------------------- */

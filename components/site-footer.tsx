@@ -42,6 +42,11 @@ export default function SiteFooter() {
             <p className="mb-3 font-semibold">Perusahaan</p>
             <ul className="space-y-2 text-sm text-muted">
               <li>
+                <Link href="/#layanan" className="hover:text-primary">
+                  Layanan
+                </Link>
+              </li>
+              <li>
                 <Link href="/tentang-kami" className="hover:text-primary">
                   Tentang Kami
                 </Link>

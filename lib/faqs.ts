@@ -1,3 +1,12 @@
+/**
+ * NONAKTIF — data FAQ (`features.faq = false`).
+ *
+ * File ini hanya dipakai oleh FaqAccordion (dinonaktifkan) sehingga seluruh
+ * isinya dikomentari. Aktifkan kembali bila fitur FAQ dihidupkan di
+ * lib/site.ts lalu hapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 export type FaqItem = {
   question: string;
   answer: string;
@@ -25,3 +34,4 @@ export const faqs: FaqItem[] = [
       "Hubungi tim kami melalui WhatsApp atau halaman kontak. Sampaikan kebutuhan armada, titik jemput, dan titik tujuan untuk mendapatkan penawaran.",
   },
 ];
+--------------------------------------------------------------------- */

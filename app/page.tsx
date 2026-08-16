@@ -1,6 +1,8 @@
 import Hero from "@/components/hero";
 import SectionTitle from "@/components/section-title";
 import AdvantagesSection from "@/components/advantages-section";
+import ServicesSection from "@/components/services-section";
+import GallerySection from "@/components/gallery-section";
 import CtaCard from "@/components/cta-card";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
@@ -8,21 +10,22 @@ import { philosophyValues, vision, missions } from "@/lib/company";
 
 /* =====================================================================
    Company profile homepage (mode saat ini).
-   Section untuk layanan (ServiceGrid, FleetSection, CoverageSection,
-   FaqAccordion) dinonaktifkan. Kode-nya tetap ada di komponen dan bisa
-   diaktifkan kembali dengan mengubah `features` di lib/site.ts.
-   =====================================================================
+   Layanan ditampilkan melalui ServicesSection (lib/services.ts) dan foto
+   kegiatan melalui GallerySection (lib/gallery.ts).
+   Komponen lama untuk layanan (ServiceGrid, FleetSection, CoverageSection,
+   FaqAccordion) sudah dikomentari. Cara mengaktifkan kembali jika fitur
+   `features` di lib/site.ts dihidupkan:
 
-   Contoh (untuk mengaktifkan kembali):
    import ServiceGrid from "@/components/service-grid";
    import FleetSection from "@/components/fleet-section";
    import CoverageSection from "@/components/coverage-section";
    import FaqAccordion from "@/components/faq-accordion";
 
-   {features.services && <ServiceGrid />}
-   {features.services && <FleetSection />}
-   {features.kotaSubtree && <CoverageSection />}
-   {features.faq && <FaqAccordion />}
+   <ServiceGrid />
+   <FleetSection />
+   <CoverageSection />
+   <FaqAccordion />
+   =====================================================================
 */
 
 export default function HomePage() {
@@ -32,6 +35,8 @@ export default function HomePage() {
         title="Solusi Transportasi & Logistik yang Terpercaya"
         subtitle={`${siteConfig.name} hadir dengan integritas dan komitmen terhadap hasil. Kami memberikan pelayanan terbaik dan harga kompetitif untuk optimalisasi serta pemenuhan kebutuhan klien.`}
       />
+
+      <ServicesSection />
 
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
@@ -96,6 +101,7 @@ export default function HomePage() {
       </section>
 
       <AdvantagesSection />
+      <GallerySection />
       <CtaCard
         title="Mari Menjadi Mitra Kami"
         subtitle="Diskusikan kebutuhan Anda bersama perusahaan kami dan dapatkan solusi yang dirancang dengan integritas serta komitmen terhadap hasil."

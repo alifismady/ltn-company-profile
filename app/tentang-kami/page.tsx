@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import SectionTitle from "@/components/section-title";
 import CtaCard from "@/components/cta-card";
 import { siteConfig } from "@/lib/site";
+import { companyServices } from "@/lib/services";
 import {
   missions,
   vision,
@@ -115,6 +116,27 @@ export default function TentangKamiPage() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <SectionTitle
+          eyebrow="Layanan Kami"
+          title="Bidang Usaha Perusahaan"
+          subtitle="Dua bidang layanan yang menjadi fokus PT Lestari Trans Nusantara."
+        />
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {companyServices.map((service) => (
+            <div
+              key={service.slug}
+              className="rounded-2xl border border-border bg-surface p-8"
+            >
+              <h3 className="mb-3 text-xl font-semibold">{service.title}</h3>
+              <p className="leading-relaxed text-muted">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 

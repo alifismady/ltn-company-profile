@@ -1,9 +1,17 @@
-import type { Metadata } from "next";
+/**
+ * NONAKTIF — halaman /faq (`features.faq = false`).
+ *
+ * Seluruh isi halaman dikomentari. Aktifkan kembali dengan mengubah
+ * `features.faq` menjadi `true` di lib/site.ts lalu hapus komentar
+ * di bawah.
+ */
 import { notFound } from "next/navigation";
+
+/* ---------------------------------------------------------------------
+import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import FaqAccordion from "@/components/faq-accordion";
 import CtaCard from "@/components/cta-card";
-import { features } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -11,11 +19,7 @@ export const metadata: Metadata = {
     "Pertanyaan yang sering diajukan seputar layanan pengiriman, sewa truk, dan jasa pindahan.",
 };
 
-/* Halaman FAQ nonaktif dalam mode company profile (lihat lib/site.ts). */
 export default function FaqPage() {
-  if (!features.faq) {
-    notFound();
-  }
   return (
     <>
       <Hero
@@ -30,4 +34,9 @@ export default function FaqPage() {
       />
     </>
   );
+}
+--------------------------------------------------------------------- */
+
+export default function FaqPage() {
+  notFound();
 }

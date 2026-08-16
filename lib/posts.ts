@@ -1,3 +1,12 @@
+/**
+ * NONAKTIF — data blog (`features.blog = false`).
+ *
+ * File ini hanya dipakai oleh halaman /blog (dinonaktifkan) sehingga seluruh
+ * isinya dikomentari. Aktifkan kembali bila fitur blog dihidupkan di
+ * lib/site.ts lalu hapus komentar di bawah.
+ */
+
+/* ---------------------------------------------------------------------
 export type BlogPost = {
   slug: string;
   title: string;
@@ -48,3 +57,4 @@ export const posts: BlogPost[] = [
 export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);
 }
+--------------------------------------------------------------------- */
