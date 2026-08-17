@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/images/company-logo.jpeg",
+    icon: "/images/company-logo.png",
   },
   /* Gambar untuk preview di tab browser, search engine, dan berbagi di
    * media sosial. Bila domain sudah tersedia, setel `metadataBase` agar
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ["/images/company-logo.jpeg"],
+    images: ["/images/company-logo.png"],
   },
   twitter: {
     card: "summary",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ["/images/company-logo.jpeg"],
+    images: ["/images/company-logo.png"],
   },
 };
 

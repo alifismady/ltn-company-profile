@@ -10,7 +10,7 @@ export default function SiteFooter() {
           <div className="lg:pr-4">
             <p className="mb-3 flex items-center gap-2 text-lg font-bold tracking-tight">
               <Image
-                src="/images/company-logo.jpeg"
+                src="/images/company-logo.png"
                 alt={`Logo ${siteConfig.name}`}
                 width={36}
                 height={36}

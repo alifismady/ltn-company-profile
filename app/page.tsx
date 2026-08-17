@@ -43,7 +43,7 @@ export default function HomePage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <Image
-              src="/images/company-logo.jpeg"
+              src="/images/company-logo.png"
               alt={`Logo ${siteConfig.name}`}
               width={120}
               height={120}

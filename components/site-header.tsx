@@ -38,7 +38,7 @@ export default function SiteHeader() {
           <Link href="/" className="flex items-center gap-2">
             {/* Logo berisi latar putih — cocok dengan header yang terang. */}
             <Image
-              src="/images/company-logo.jpeg"
+              src="/images/company-logo.png"
               alt={`Logo ${siteConfig.name}`}
               width={40}
               height={40}

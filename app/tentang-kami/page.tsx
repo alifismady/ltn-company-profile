@@ -32,7 +32,7 @@ export default function TentangKamiPage() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="mb-8 flex justify-center">
           <Image
-            src="/images/company-logo.jpeg"
+            src="/images/company-logo.png"
             alt={`Logo ${siteConfig.name}`}
             width={120}
             height={120}
