@@ -20,8 +20,8 @@ export const workPhotos: WorkPhoto[] = [
   },
   {
     src: "/images/truk-2.jpeg",
-    alt: "Armada andal untuk kebutuhan logistik",
-    caption: "Armada andal untuk logistik",
+    alt: "Armada andal untuk kebutuhan angkutan",
+    caption: "Armada andal untuk angkutan",
   },
   {
     src: "/images/truk-3.jpeg",

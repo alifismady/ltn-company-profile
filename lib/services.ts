@@ -13,16 +13,16 @@ export type CompanyService = {
 export const companyServices: CompanyService[] = [
   {
     slug: "sewa-angkutan",
-    title: "Sewa Angkutan & Logistik",
+    title: "Sewa Angkutan",
     description:
-      "Layanan sewa angkutan truk untuk berbagai kebutuhan pengiriman dan distribusi — mulai dari pengiriman ringan, jasa pindahan rumah dan kantor, hingga kargo skala besar — dengan armada terawat dan supir profesional.",
-    offers: ["Sewa Truk Berbagai Armada", "Jasa Pindahan", "Paket & Kargo"],
+      "Layanan sewa angkutan truk untuk berbagai kebutuhan pengangkutan dan distribusi barang — dari muatan ringan, jasa pindahan rumah dan kantor, hingga muatan besar — dengan armada terawat dan supir profesional.",
+    offers: ["Sewa Truk Berbagai Armada", "Jasa Pindahan", "Angkutan Barang"],
   },
   {
-    slug: "manajemen-limbah-non-b3",
-    title: "Manajemen Limbah Non-B3",
+    slug: "pengolahan-sampah",
+    title: "Pengolahan Sampah",
     description:
-      "Menggunakan kembali sampah yang masih dapat digunakan, mengurangi segala sesuatu yang menyebabkan pemborosan, dan mendaur ulang sampah — untuk pengelolaan limbah non-B3 yang lebih ramah lingkungan dan berkelanjutan.",
+      "Menggunakan kembali sampah yang masih dapat digunakan, mengurangi segala sesuatu yang menyebabkan pemborosan, dan mendaur ulang sampah — untuk pengolahan limbah non-B3 yang lebih ramah lingkungan dan berkelanjutan.",
     offers: ["Reuse — Guna Ulang", "Reduce — Kurangi", "Recycle — Daur Ulang"],
   },
 ];

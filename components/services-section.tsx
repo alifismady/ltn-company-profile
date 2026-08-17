@@ -14,7 +14,7 @@ const RECYCLE_ICON_PATHS = [
 ];
 
 function ServiceLogo({ service }: { service: CompanyService }) {
-  if (service.slug === "manajemen-limbah-non-b3") {
+  if (service.slug === "pengolahan-sampah") {
     return (
       <svg
         className="h-12 w-12"
@@ -55,9 +55,7 @@ export default function ServicesSection() {
         <SectionTitle
           eyebrow="Layanan Kami"
           title="Solusi yang Sesuai dengan Kebutuhan Anda"
-          subtitle={
-            "Perusahaan kami melayani lebih dari sekadar angkutan — mulai dari sewa angkutan truk dan logistik hingga pengelolaan limbah non-B3 yang ramah lingkungan."
-          }
+          subtitle="Dua bidang layanan utama perusahaan kami: sewa angkutan dan pengolahan sampah."
         />
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {companyServices.map((service) => (

@@ -208,7 +208,7 @@ export default function TentangKamiPage() {
 
       <CtaCard
         title="Mari Bekerja Sama"
-        subtitle="Bicarakan kebutuhan logistik Anda bersama tim kami hari ini."
+        subtitle="Bicarakan kebutuhan sewa angkutan dan pengolahan sampah Anda bersama tim kami hari ini."
       />
     </>
   );

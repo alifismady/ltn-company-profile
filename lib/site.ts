@@ -16,7 +16,7 @@
  * - `blog`        → halaman /blog, lib/posts.ts
  * - `cekHarga`    → halaman /cek-harga
  *
- * Info layanan yang aktif (termasuk Manajemen Limbah Non-B3) kini tampil
+ * Info layanan yang aktif (Sewa Angkutan & Pengolahan Sampah) kini tampil
  * di homepage melalui lib/services.ts + components/services-section.tsx.
  */
 export const features = {
@@ -32,7 +32,7 @@ export const siteConfig = {
   tagline:
     "Menjadi perusahaan yang unggul, terpercaya, dan terdepan dengan memberikan pelayanan terbaik dan harga kompetitif dalam optimalisasi serta pemenuhan kebutuhan klien.",
   description:
-    "PT Lestari Trans Nusantara adalah perusahaan transportasi dan logistik yang menjunjung tinggi integritas, profesionalisme, dan pelayanan terbaik untuk optimalisasi serta pemenuhan kebutuhan klien.",
+    "PT Lestari Trans Nusantara adalah perusahaan yang bergerak di bidang jasa sewa angkutan dan pengolahan sampah, menjunjung tinggi integritas, profesionalisme, dan pelayanan terbaik untuk optimalisasi serta pemenuhan kebutuhan klien.",
   phone: "0822-1876-5376",
   phoneRaw: "6282218765376",
   email: "ptlestaritransnusantara@gmail.com",

@@ -4,7 +4,8 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Kontak",
-  description: "Hubungi kami untuk konsultasi dan penawaran layanan logistik.",
+  description:
+    "Hubungi kami untuk konsultasi dan penawaran layanan sewa angkutan dan pengolahan sampah.",
 };
 
 export default function KontakPage() {
@@ -12,7 +13,7 @@ export default function KontakPage() {
     <>
       <Hero
         title="Hubungi Kami"
-        subtitle="Tim kami siap membantu Anda. Konsultasikan kebutuhan logistik Anda secara gratis."
+        subtitle="Tim kami siap membantu Anda. Konsultasikan kebutuhan Anda secara gratis."
         ctaLabel=""
       />
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">

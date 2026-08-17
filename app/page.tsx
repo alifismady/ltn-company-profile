@@ -33,7 +33,7 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Solusi Transportasi & Logistik yang Terpercaya"
+        title="Solusi Angkutan & Pengolahan Sampah yang Terpercaya"
         subtitle={`${siteConfig.name} hadir dengan integritas dan komitmen terhadap hasil. Kami memberikan pelayanan terbaik dan harga kompetitif untuk optimalisasi serta pemenuhan kebutuhan klien.`}
       />
 
